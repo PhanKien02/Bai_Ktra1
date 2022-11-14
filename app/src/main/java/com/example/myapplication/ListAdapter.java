@@ -43,13 +43,13 @@ public class ListAdapter  extends BaseAdapter {
         TextView name = view.findViewById(R.id.name_item);
         TextView stageName = view.findViewById(R.id.stageName_item);
         TextView star = view.findViewById(R.id.star_item);
-//        ImageView image = view.findViewById(R.id.image_item);
+        ImageView image = view.findViewById(R.id.image_item);
 
         Singer singer = singers.get(i);
         name.setText(singer.getName());
         stageName.setText(singer.getStageName());
         star.setText(singer.getStar());
-//        image.setImageResource(singer.getImage());
+        image.setImageResource(singer.getImage());
         return view;
     }
 }
